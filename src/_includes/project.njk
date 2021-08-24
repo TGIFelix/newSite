@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		{{ title }}
+	</title>
+
+	{% set css %}
+		{% include "style.css" %}
+		{% include "tailwind.jit.css" %}
+	{% endset %}
+    <style>
+	      @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url("https://fonts.gstatic.com/s/jetbrainsmono/v6/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOTk6OThhvA.woff") format('woff');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+		{{ css | cssmin | safe }}
+    </style>
+</head>
+<body class="relative overflow-x-hidden text-gray-900 debug-screens">
+
+	{% include 'components/header.njk' %}
+	<main>
+		<section class="w-screen">
+			<div class="container">
+				{{ content | safe }}
+			</div>
+		</section>
+	</main>
+
+	{% include 'components/footer.njk' %}
+
+	{% set js %}{% include "app.js" %}{% endset %}
+  	<script>
+    	{{ js | jsmin | safe }}
+  	</script>
+</body>
+</html>

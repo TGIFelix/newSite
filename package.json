@@ -1,0 +1,34 @@
+{
+  "name": "11ty",
+  "version": "1.0.0",
+  "author": {
+    "name": "Felix Swinkels",
+    "email": "info@tgifelix.com",
+    "url": "https://www.tgifelix.com"
+  },
+  "description": "11ty Boilerplate",
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "boilerplate",
+    "jams",
+    "jamstack"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "watch:11ty": "eleventy --serve",
+    "watch:tw": "tailwindcss -o src/_includes/tailwind.jit.css --watch",
+    "dev": "npm-run-all --parallel watch:*"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "tailwindcss-debug-screens": "^2.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "clean-css": "^4.2.3",
+    "terser": "^5.6.0"
+  }
+}
