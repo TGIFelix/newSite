@@ -962,6 +962,11 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-filter);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
