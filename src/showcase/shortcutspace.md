@@ -5,5 +5,5 @@ alt: Screenshot of Shopify store theme
 link: https://shortcut.space
 source: https://github.com/tgifelix/shortcutspace
 meta: ReactJS, Styled Components
-description: Shopify multipurpose template build on Shopify OS 2. Fully customizable sections and blocks. [Work in progress]
+description: This is the result of my desire to build an open source project for new developers to contribute to on GitHub.
 ---
