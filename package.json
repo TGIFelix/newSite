@@ -19,7 +19,8 @@
   "scripts": {
     "watch:11ty": "eleventy --serve",
     "watch:tw": "tailwindcss -o src/_includes/tailwind.jit.css --watch",
-    "dev": "npm-run-all --parallel watch:*"
+    "dev": "npm-run-all --parallel watch:*",
+    "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
