@@ -715,20 +715,8 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
 .row-span-5 {
   grid-row: span 5 / span 5;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
-.row-start-3 {
-  grid-row-start: 3;
 }
 
 .row-start-7 {
@@ -763,20 +751,8 @@ video {
   height: 16rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
 .h-16 {
   height: 4rem;
-}
-
-.max-h-32 {
-  max-height: 8rem;
 }
 
 .min-h-\[calc\(100vh-96px\)\] {
@@ -812,38 +788,12 @@ video {
   cursor: pointer;
 }
 
-.auto-rows-max {
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-.auto-rows-fr {
-  grid-auto-rows: minmax(0, 1fr);
-}
-
-.auto-rows-min {
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
-}
-
-.auto-rows-auto {
-  grid-auto-rows: auto;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -854,16 +804,8 @@ video {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
 }
 
 .justify-end {
@@ -892,20 +834,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
 .border-b-4 {
   border-bottom-width: 4px;
-}
-
-.border-t-4 {
-  border-top-width: 4px;
 }
 
 .border-t-2 {
@@ -956,14 +890,6 @@ video {
   text-align: right;
 }
 
-.align-baseline {
-  vertical-align: baseline;
-}
-
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -983,14 +909,14 @@ video {
   line-height: 1;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-dark {
@@ -1045,12 +971,6 @@ video {
 
 .group:hover .group-hover\:-translate-y-2 {
   --tw-translate-y: -0.5rem;
-  transform: var(--tw-transform);
-}
-
-.group:hover .group-hover\:scale-105 {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
   transform: var(--tw-transform);
 }
 
