@@ -1,6 +1,6 @@
 ---
 title: shortcutSpace
-image: /img/showcase_shortcutspace.jpg
+image: /img/showcase_shortcutspace.webp
 alt: Screenshot of Shopify store theme
 link: https://shortcut.space
 source: https://github.com/tgifelix/shortcutspace

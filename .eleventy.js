@@ -3,7 +3,7 @@ const { minify } = require("terser");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.setTemplateFormats(["md", "jpg", "png", "html", "svg", "js"]);
+	eleventyConfig.setTemplateFormats(["md", "jpg", "png", "html", "svg", "js", "webp"]);
 	eleventyConfig.addFilter("cssmin", function (code) {
 		return new CleanCSS({}).minify(code).styles;
 	});
