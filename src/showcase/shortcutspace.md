@@ -6,5 +6,4 @@ link: https://shortcut.space
 source: https://github.com/tgifelix/shortcutspace
 meta: ReactJS, JamStack
 description: Shopify multipurpose template build on Shopify OS 2. Fully customizable sections and blocks. [Work in progress]
-permalink: false
 ---
