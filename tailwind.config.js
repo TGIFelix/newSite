@@ -23,8 +23,8 @@ module.exports = {
 		  })
 	],
 
-	darkMode: 'media', // or 'media' or 'class'
-
+	darkMode: 'media',
+	
 	theme: {
 		container: {
 			center: true,
