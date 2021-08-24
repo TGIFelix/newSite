@@ -600,8 +600,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 @media (min-width: 640px) {
@@ -699,12 +699,20 @@ video {
   right: 0px;
 }
 
-.z-40 {
-  z-index: 40;
+.z-50 {
+  z-index: 50;
 }
 
 .order-3 {
   order: 3;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
 }
 
 .col-span-2 {
@@ -735,8 +743,8 @@ video {
   height: 2rem;
 }
 
-.h-64 {
-  height: 16rem;
+.h-\[calc\(100vw-112px\)\] {
+  height: calc(100vw - 112px);
 }
 
 .min-h-\[calc\(100vh-96px\)\] {
@@ -745,6 +753,18 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
+
+.min-h-\[calc\(100vw-112px\)\] {
+  min-height: calc(100vw - 112px);
 }
 
 .w-screen {
@@ -857,8 +877,8 @@ video {
   overflow-x: hidden;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-b-4 {
@@ -867,10 +887,6 @@ video {
 
 .border-t-2 {
   border-top-width: 2px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-current {
@@ -884,16 +900,6 @@ video {
 
 .bg-primary {
   background-color: var(--primary-color);
-}
-
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .py-8 {
@@ -991,10 +997,6 @@ video {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
-.text-primary {
-  color: var(--primary-color);
-}
-
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -1002,12 +1004,6 @@ video {
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors {
-  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1029,10 +1025,6 @@ video {
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
   transform: var(--tw-transform);
-}
-
-.hover\:text-primary:hover {
-  color: var(--primary-color);
 }
 
 .group:hover .group-hover\:-translate-y-2 {
@@ -1073,10 +1065,6 @@ video {
 
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
   }
 
   .lg\:grid-cols-2 {
