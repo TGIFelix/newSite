@@ -18,7 +18,7 @@
   "main": "index.js",
   "scripts": {
     "watch:11ty": "eleventy --serve",
-    "watch:tw": "tailwindcss -o src/_includes/tailwind.jit.css --watch",
+    "watch:tw": "tailwindcss -o src/_includes/style.css --watch",
     "dev": "npm-run-all --parallel watch:*",
     "build": "eleventy"
   },
