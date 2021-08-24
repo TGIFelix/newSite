@@ -854,6 +854,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -884,6 +889,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -974,6 +983,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.last\:pb-10:last-child {
+  padding-bottom: 2.5rem;
 }
 
 .hover\:-translate-y-2:hover {
@@ -1068,8 +1081,17 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .lg\:text-right {
@@ -1079,6 +1101,10 @@ video {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:last\:pb-20:last-child {
+    padding-bottom: 5rem;
   }
 
   .lg\:even\:rtl:nth-child(even) {

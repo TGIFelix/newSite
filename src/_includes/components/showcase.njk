@@ -5,7 +5,7 @@
 		</div>
 
 		{% for item in collections.showcase %}
-			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 lg:even:rtl">
+			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 lg:even:rtl last:pb-10 lg:last:pb-20">
 
 				<div class="overflow-hidden group">
 					<img src="{{ item.data.image }}" alt="{{ item.data.alt }}" width="752" height="880" class="transition-transform duration-300 group-hover:scale-105">
