@@ -17,20 +17,32 @@ module.exports = {
 	darkMode: 'media', // or 'media' or 'class'
 
 	theme: {
-	  container: {
-		  center: true,
-		  padding: '1rem',
-	  },
+		container: {
+			center: true,
+			padding: '1rem',
+		},
 	  
-	  extend: {
-		colors: {
-			primary: 'var(--primary-color)',
-			dark: '#212121',
-			light: '#fff'
-		},
-		fontSize: {
-			xxl: 'clamp(2rem, 5vw, 4rem)',
-		},
-	  }
+		extend: {
+			fontFamily: {
+				body: ["JetBrains Mono"]
+			},
+			colors: {
+				primary: 'var(--primary-color)',
+				dark: '#212121',
+				light: '#fff'
+			},
+			fontSize: {
+				xxl: 'clamp(2rem, 5vw, 4rem)',
+			},
+			keyframes: {
+				fadein: {
+				'0%': { opacity: '0' },
+				'100%': { opacity: '1' },
+				}
+			},
+			animation: {
+				fadein: 'fadein 3000ms'
+			},
+	  	}
 	}
-  }
+}
