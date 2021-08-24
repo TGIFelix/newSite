@@ -5,7 +5,7 @@
 		</div>
 
 		{% for item in collections.showcase %}
-			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 showcase__item">
+			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 even:rtl">
 
 				<div class="overflow-hidden group">
 					<img src="{{ item.data.image }}" alt="{{ item.data.alt }}" class="transition-transform duration-300 group-hover:scale-105">
@@ -32,7 +32,3 @@
 		{% endfor %}
 	</div>	
 </section>
-
-<style>
-	.showcase__item:nth-child(even) { direction: rtl; }
-</style>

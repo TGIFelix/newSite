@@ -1,17 +1,26 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	mode: 'jit',
 
 	purge: {
 	  enabled: false,
 	  content: [
-		'src/*.md',
-		'src/_includes/*.njk',
-		'src/_includes/components/*.njk',
+		'src/_includes/**/*.njk',
 	  ]
 	},
 
 	plugins: [
 		require('tailwindcss-debug-screens'),
+		plugin(function({ addUtilities }) {
+			const newUtilities = {
+			  '.rtl': {
+				direction: 'rtl',
+			  },
+			}
+	  
+			addUtilities(newUtilities, ['responsive'])
+		  })
 	],
 
 	darkMode: 'media', // or 'media' or 'class'
