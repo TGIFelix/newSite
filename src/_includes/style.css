@@ -707,14 +707,6 @@ video {
   order: 3;
 }
 
-.order-2 {
-  order: 2;
-}
-
-.order-1 {
-  order: 1;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -937,9 +929,9 @@ video {
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xl {
@@ -952,9 +944,9 @@ video {
   line-height: 1;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm {
@@ -1031,6 +1023,11 @@ video {
   .sm\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
