@@ -4,47 +4,35 @@
 			#Showcase__
 		</div>
 
-		<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20">
+		{% for item in collections.showcase %}
+			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 showcase__item">
 
-			<div class="overflow-hidden group lg:order-2">
-				<img src="img/showcase_shopify.jpg" alt="Shortcut Space Screenshot" class="transition-transform duration-300 group-hover:scale-105">
-			</div>
+				<div class="overflow-hidden group">
+					<img src="{{ item.data.image }}" alt="{{ item.data.alt }}" class="transition-transform duration-300 group-hover:scale-105">
+				</div>
 
-			<div class="flex flex-col justify-between space-y-8 lg:order-1">
-				<p class="text-2xl sm:text-4xl">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum exercitationem cumque, laborum fugiat, sint aliquam quia nesciunt sapiente numquam pariatur laudantium sed hic distinctio deserunt iste illum nemo porro!
-				</p>
-				<div>
-					<div class="pt-2 pb-8 text-sm border-t-2 border-current">Open-Source, ReactJS, BETA</div>
-					<div class="pt-2 pb-8 text-sm border-t-2 border-current">
-						<a href="https://shortcut.space" target="_blank" rel="noopener noreferrer" class="styled">Link ⇲</a>
-						<a href="https://github.com/tgifelix/shortcutspace" target="_blank" rel="noopener noreferrer" class="styled">Source ⇲</a>
+				<div class="flex flex-col justify-between space-y-8">
+					<p class="text-2xl text-left sm:text-4xl">
+						{{ item.data.description }}
+					</p>
+					<div>
+						<div class="pt-2 pb-8 text-sm text-left border-t-2 border-current">{{ item.data.meta }}</div>
+						<div class="pt-2 pb-8 text-sm text-left border-t-2 border-current">
+							{% if item.data.link %}
+								<a href="{{ item.data.link }}" target="_blank" rel="noopener noreferrer" class="styled">Link ⇲</a>
+							{% endif %}
+							{% if item.data.source %}
+								<a href="{{ item.data.source }}" target="_blank" rel="noopener noreferrer" class="styled">Source ⇲</a>
+							{% endif %}
+						</div>
 					</div>
 				</div>
+
 			</div>
-
-		</div>
-
-		<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20">
-
-			<div class="overflow-hidden group lg:order-1">
-				<img src="img/showcase_scs.jpg" alt="Shortcut Space Screenshot" class="transition-transform duration-300 group-hover:scale-105">
-			</div>
-
-			<div class="flex flex-col justify-between space-y-8 lg:order-2">
-				<p class="text-2xl sm:text-4xl">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum exercitationem cumque, laborum fugiat, sint aliquam quia nesciunt sapiente numquam pariatur laudantium sed hic distinctio deserunt iste illum nemo porro!
-				</p>
-				<div>
-					<div class="pt-2 pb-8 text-sm border-t-2 border-current">Open-Source, ReactJS, BETA</div>
-					<div class="pt-2 pb-8 text-sm border-t-2 border-current">
-						<a href="https://shortcut.space" target="_blank" rel="noopener noreferrer" class="styled">Link ⇲</a>
-						<a href="https://github.com/tgifelix/shortcutspace" target="_blank" rel="noopener noreferrer" class="styled">Source ⇲</a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
+		{% endfor %}
 	</div>	
 </section>
+
+<style>
+	.showcase__item:nth-child(even) { direction: rtl; }
+</style>
