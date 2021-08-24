@@ -35,12 +35,3 @@ body {
 main {
 	animation: fadein 3000ms;
 }
-
-h1 {
-    font-size: 4vw !important;
-}
-
-#Hero a:hover {
-    color: var(--primary-color);
-    transition: color 500ms;
-}

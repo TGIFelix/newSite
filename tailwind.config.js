@@ -31,7 +31,6 @@ module.exports = {
 		fontSize: {
 			xxl: 'clamp(2rem, 5vw, 4rem)',
 		},
-		fill: ['hover', 'focus'],
 	  }
 	}
   }
