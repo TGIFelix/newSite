@@ -1,6 +1,6 @@
 ---
 title: Greenly
-image: /img/showcase_shopify.jpg
+image: /img/showcase_greenly.jpg
 alt: Screenshot of Shopify store theme
 link: https://www.figma.com/file/Jxkmbcx2WRjCO51yXO5BU9/Plant-Shop-1?node-id=0%3A1
 source: 

@@ -739,10 +739,6 @@ video {
   height: 4rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -892,8 +888,12 @@ video {
   padding-bottom: 5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pt-24 {
@@ -906,6 +906,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-2 {
@@ -1006,10 +1010,6 @@ video {
   transition-duration: 300ms;
 }
 
-.even\:rtl:nth-child(even) {
-  direction: rtl;
-}
-
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
   transform: var(--tw-transform);
@@ -1092,5 +1092,9 @@ video {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:even\:rtl:nth-child(even) {
+    direction: rtl;
   }
 }

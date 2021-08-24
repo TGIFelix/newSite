@@ -1,11 +1,11 @@
-<section id="Showcase" class="w-screen min-h-screen border-b-4 border-current">
+<section id="Showcase" class="w-screen border-b-4 border-current">
 	<div class="container">
 		<div class="text-3xl text-right">
 			#Showcase__
 		</div>
 
 		{% for item in collections.showcase %}
-			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 even:rtl">
+			<div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-2 lg:pt-20 lg:even:rtl">
 
 				<div class="overflow-hidden group">
 					<img src="{{ item.data.image }}" alt="{{ item.data.alt }}" class="transition-transform duration-300 group-hover:scale-105">
