@@ -769,6 +769,10 @@ video {
   width: 4rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: var(--tw-transform);
