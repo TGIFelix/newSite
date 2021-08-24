@@ -40,9 +40,6 @@ module.exports = {
 				dark: '#212121',
 				light: '#fff'
 			},
-			fontSize: {
-				xxl: 'clamp(2rem, 5vw, 4rem)',
-			},
 			keyframes: {
 				fadein: {
 				'0%': { opacity: '0' },
