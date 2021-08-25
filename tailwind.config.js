@@ -17,6 +17,9 @@ module.exports = {
 			  '.rtl': {
 				direction: 'rtl',
 			  },
+			  '.ltr': {
+				direction: 'ltr',
+			  },
 			}
 	  
 			addUtilities(newUtilities, ['responsive'])
