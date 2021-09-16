@@ -19,7 +19,7 @@
   "scripts": {
     "watch:11ty": "eleventy --serve",
     "watch:tw": "tailwindcss -o src/_includes/style.css --watch",
-    "dev": "npm-run-all --parallel watch:*",
+    "dev": "run-p watch:*",
     "build": "eleventy"
   },
   "devDependencies": {
