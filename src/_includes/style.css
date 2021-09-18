@@ -704,10 +704,6 @@ video {
   height: 2rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -722,14 +718,6 @@ video {
 
 .w-8 {
   width: 2rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-20 {
-  width: 5rem;
 }
 
 .translate-x-full {
@@ -958,6 +946,11 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-filter);
 }
 
 .transition-all {
