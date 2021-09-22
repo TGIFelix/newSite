@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -475,6 +475,18 @@ button,
   cursor: pointer;
 }
 
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -826,18 +838,13 @@ video {
   border-color: currentColor;
 }
 
-.bg-white {
+.bg-dark {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(33, 33, 33, var(--tw-bg-opacity));
 }
 
 .bg-primary {
   background-color: var(--primary-color);
-}
-
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgba(33, 33, 33, var(--tw-bg-opacity));
 }
 
 .py-8 {
@@ -928,19 +935,9 @@ video {
   line-height: 1.25rem;
 }
 
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgba(33, 33, 33, var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .subpixel-antialiased {
@@ -1032,27 +1029,6 @@ video {
 
 .group:hover .group-hover\:text-primary {
   color: var(--primary-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-dark {
-    --tw-bg-opacity: 1;
-    background-color: rgba(33, 33, 33, var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-primary {
-    background-color: var(--primary-color);
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
-  }
-
-  .dark\:invert {
-    --tw-invert: invert(100%);
-    filter: var(--tw-filter);
-  }
 }
 
 @media (min-width: 640px) {
