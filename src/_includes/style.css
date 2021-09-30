@@ -857,6 +857,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -970,6 +980,22 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[5s\] {
+  transition-duration: 5s;
+}
+
+.duration-\[3s\] {
+  transition-duration: 3s;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ltr {
   direction: ltr;
 }
@@ -1014,6 +1040,16 @@ video {
 .hover\:animate-bounce:hover {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.hover\:invert:hover {
+  --tw-invert: invert(100%);
+  filter: var(--tw-filter);
+}
+
+.hover\:invert-0:hover {
+  --tw-invert: invert(0);
+  filter: var(--tw-filter);
 }
 
 .group:hover .group-hover\:-translate-y-2 {
