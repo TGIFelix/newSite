@@ -52,6 +52,9 @@ module.exports = {
 			animation: {
 				fadein: 'fadein 3000ms'
 			},
+			backgroundImage: {
+				'devops': "url('/img/bg_grain.jpg')",
+			}
 	  	}
 	}
 }
