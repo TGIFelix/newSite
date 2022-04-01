@@ -1043,10 +1043,6 @@ video {
   transform: var(--tw-transform);
 }
 
-.group:hover .group-hover\:text-primary {
-  color: var(--primary-color);
-}
-
 .group:hover .group-hover\:text-secondary {
   --tw-text-opacity: 1;
   color: rgba(251, 113, 133, var(--tw-text-opacity));
