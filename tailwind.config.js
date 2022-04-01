@@ -40,6 +40,7 @@ module.exports = {
 			},
 			colors: {
 				primary: 'var(--primary-color)',
+				secondary: '#fb7185',
 				dark: '#212121',
 				light: '#fff'
 			},
@@ -53,7 +54,7 @@ module.exports = {
 				fadein: 'fadein 3000ms'
 			},
 			backgroundImage: {
-				'devops': "url('/img/bg-devops.webp')",
+				'devops': "url('/img/bg-devops.jpg')",
 			}
 	  	}
 	}
